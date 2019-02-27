@@ -15,6 +15,8 @@ account and you have the quota to create at least 2 VMs which could be clustered
 
 # Create Virtual Machines
 
+![Create Instance Snapshot](/images/im1.jpg)
+
 - Create 3 VMs with "m1.small" flavor, instance boot source set to boot from image
 and image name of "Ubuntu 18.04".
 - In the access and security section, create a new key pair if you don't already have one.
@@ -299,7 +301,7 @@ Hello World! I have been seen 1 times.
 As you can see, refreshing this page causes the number to rise. We just deployed an stack with 2 different images using a
 single command. You can deploy very complicated stacks using docker swarm.
 
-## Clear Everything
+## Delete the stack
 
 ```
 docker-compose down --volumes
@@ -316,3 +318,7 @@ Removing stackdemo_redis_1 ... done
 Removing network stackdemo_default
 
 ```
+
+# Clear Everything
+
+When you are done with your swarm, just delete all the instances from the cybera portal.
