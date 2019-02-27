@@ -176,6 +176,7 @@ docker node inspect demo-2
 docker service rm web
 ```
 
-# Create a Stack
+# Docker Stack
+## Create a Stack
 
 # Clear Everything
