@@ -15,7 +15,7 @@ account and you have the quota to create at least 2 VMs which could be clustered
 
 # Create Virtual Machines
 
-![Create Instance Snapshot](/images/im1.jpg)
+![Create Instance Snapshot](./images/im1.jpg)
 
 - Create 3 VMs with "m1.small" flavor, instance boot source set to boot from image
 and image name of "Ubuntu 18.04".
@@ -30,6 +30,13 @@ ping 10.1.X.X
 
 ssh -i PRIVATE_KEY_FILE ubuntu@10.1.X.X
 ```
+
+# Open the TCP Ports
+
+Open up the following TCP ports in the `default` security group in the OpenStack.
+
+- 22 (ssh), 2376 and 2377 (Swarm), 80 (nginx), 8000 (web app)
+- You can do this on Cybera by going to `Network` menu and `Security Groups` on the left pane.
 
 # Install Docker
 ```
